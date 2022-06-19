@@ -1,0 +1,49 @@
+Framingham Risk Score BSC70 Adjusted Code
+
+
+
+IF B10CMSEX eq (1) & BD10AGEINTY ge (39) & BD10AGEINTY le (45) agescr=5.
+IF B10CMSEX eq (2) & BD10AGEINTY ge (39) & BD10AGEINTY le (45) agescr=4.
+IF B10CMSEX eq (1) & BD10AGEINTY ge (44) & BD10AGEINTY le (50) agescr=6.
+IF B10CMSEX eq (2) & BD10AGEINTY ge (44) & BD10AGEINTY le (50) agescr=5. 
+ 
+IF B10HDL ge (1.54) hdlscr= -2.
+IF B10HDL ge (1.28) & B10HDL le (1.55) hdlscr= -1.
+IF B10HDL ge (1.15) & B10HDL le (1.29) hdlscr= 0.
+IF B10HDL ge (0.90) & B10HDL le (1.16) hdlscr= 1.
+IF B10HDL le (0.91) hdlscr= 2.
+ 
+IF B10CHOL le (4.15) cholscr=0.
+IF B10CHOL ge (4.14) & B10CHOL le (5.16) cholscr= 1.
+IF B10CMSEX eq (1) & B10CHOL ge (5.15) & B10CHOL le (6.19) cholscr= 2.
+IF B10CMSEX eq (2) & B10CHOL ge (5.15) & B10CHOL le (6.19) cholscr= 3.
+IF B10CMSEX eq (1) & B10CHOL ge (6.18) & B10CHOL le (7.22) cholscr= 3.
+IF B10CMSEX eq (2) & B10CHOL ge (6.18) & B10CHOL le (7.22) cholscr= 4.
+IF B10CMSEX eq (1) & B10CHOL ge (7.21) cholscr= 4.
+IF B10CMSEX eq (2) & B10CHOL ge (7.21) cholscr= 5.
+ 
+IF B10CMSEX eq (1) & AverageSystBP le (120) sybpscr= -2.
+IF B10CMSEX eq (2) & AverageSystBP le (120) sybpscr= -3.
+IF AverageSystBP ge (119) & AverageSystBP le (130) sybpscr= 0.
+IF AverageSystBP ge (129) & AverageSystBP le (140) sybpscr= 1.
+IF B10CMSEX eq (1) & AverageSystBP ge (139) & AverageSystBP le (160) sybpscr= 2.
+IF B10CMSEX eq (2) & AverageSystBP ge (139) & AverageSystBP le (150) sybpscr= 2.
+IF B10CMSEX eq (1) & AverageSystBP ge (159) sybpscr= 3. 
+IF B10CMSEX eq (2) & AverageSystBP ge (149) & AverageSystBP le (160) sybpscr= 4.
+IF B10CMSEX eq (2) & AverageSystBP ge (159) sybpscr= 5.
+
+IF B10SMOKIG le (2) smokscr=0.
+IF B10CMSEX eq (1) & B10SMOKIG ge (2) smokscr=4.
+IF B10CMSEX eq (2) & B10SMOKIG ge (2) smokscr=3.
+
+IF B10KHPB03 eq (0) diabscr=0.
+IF B10CMSEX eq (1) & B10KHPB03 eq (1) diabscr=3.
+IF B10CMSEX eq (2) & B10KHPB03 eq (1) diabscr=4.
+
+
+
+ 
+ 
+COMPUTE framscr = agescr + hdlscr + cholscr + sybpscr + smokscr + diabscr.
+EXECUTE.
+
