@@ -1,0 +1,72 @@
+Variable Dictionary 
+
+Pos. = 5	Variable = B10CMSEX	Variable label = CM's sex
+This variable is  numeric, the SPSS measurement level is NOMINAL
+SPSS user missing values = -9.0 thru -8.0 and -1.0
+	Value label information for B10CMSEX
+	Value = 1.0	Label = Male   
+	Value = 2.0	Label = Female 
+	Value = -9.0	Label = Refused
+	Value = -8.0	Label = Not known      
+	Value = -1.0	Label = Not applicable
+
+Pos. = 864	Variable = B10HDL	Variable label = HDL cholesterol (mmol/L)
+This variable is  numeric, the SPSS measurement level is SCALE
+SPSS user missing values = -9.0 thru -8.0 and -1.0
+	Value label information for B10HDL
+	Value = -8.0	Label = Sample unsuitable for analysis 
+	Value = -1.0	Label = Not applicable 
+	Value = -9.0	Label = Refused
+
+Pos. = 863	Variable = B10CHOL	Variable label = Total cholesterol (mmol/L)  
+This variable is  numeric, the SPSS measurement level is SCALE
+SPSS user missing values = -9.0 thru -8.0 and -1.0
+	Value label information for B10CHOL
+	Value = -8.0	Label = Sample unsuitable for analysis 
+	Value = -1.0	Label = Not applicable 
+	Value = -9.0	Label = Refused
+
+Pos. = 754	Variable = B10BPSYSR1	Variable label = First systolic blood pressure reading (mmHg)
+This variable is  numeric, the SPSS measurement level is SCALE
+SPSS user missing values = -9.0 thru -8.0 and -1.0
+	Value label information for B10BPSYSR1
+	Value = -8.0	Label = Not known      
+	Value = -1.0	Label = Not applicable 
+	Value = -9.0	Label = Refused
+
+Pos. = 431	Variable = B10SMOKIG	Variable label = Whether smoke (or used to smoke)
+This variable is  numeric, the SPSS measurement level is NOMINAL
+SPSS user missing values = -9.0 thru -8.0 and -1.0
+	Value label information for B10SMOKIG
+	Value = 1.0	Label = I've never smoked cigarettes   
+	Value = 2.0	Label = I used to smoke but don't at all now   
+	Value = 3.0	Label = I now smoke occasionally but not daily 
+	Value = 4.0	Label = I smoke cigarettes every day   
+	Value = -9.0	Label = Refused
+	Value = -8.0	Label = Not known      
+	Value = -1.0	Label = Not applicable 
+
+	
+
+Pos. = 268	Variable = B10DIABD	Variable label = Whether diabetes diagnosed by doctor
+This variable is  numeric, the SPSS measurement level is NOMINAL
+SPSS user missing values = -9.0 thru -8.0 and -1.0
+	Value label information for B10DIABD
+	Value = 1.0	Label = Yes    
+	Value = 2.0	Label = No     
+	Value = -9.0	Label = Refused
+	Value = -8.0	Label = Not known      
+	Value = -1.0	Label = Not applicable
+
+
+
+Pos. = 241	Variable = B10KHPB03	Variable label = Health probs since last int/4 yrs ago: (Sugar) Diabetes 
+This variable is  numeric, the SPSS measurement level is NOMINAL
+SPSS user missing values = -9.0 thru -8.0 and -1.0
+	Value label information for B10KHPB03
+	Value = 0.0	Label = No     
+	Value = 1.0	Label = Yes    
+	Value = -9.0	Label = Refused
+	Value = -8.0	Label = Not known      
+	Value = -1.0	Label = Not applicable
+
